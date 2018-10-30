@@ -1,13 +1,16 @@
 #include "relation.h"
 #include <vector>
 
+
 //return y related to x and fill gaps using linear function
-double relation::linear_evaluate(double xs){
+double data_set::value(double xs){
 	int n;
 	if(binary_search(x,xs,n))return y[n];
 	else{
-		if(n<=0)return linear_approximation(x[n],y[n],x[n+1],y[n+1],xs);
-		else return linear_approximation(x[0],y[0],x[1],y[1],xs);
+		if(eval_type==0){
+			if(n<=0)return linear_approximation(x[n],y[n],x[n+1],y[n+1],xs);
+			else return linear_approximation(x[0],y[0],x[1],y[1],xs);
+		}
 	}
 }
 
