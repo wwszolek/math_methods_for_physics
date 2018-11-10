@@ -8,6 +8,7 @@ class function{
 		algorithm_type algorithm;
 		
 	public:
+		function(){}
 		function(algorithm_type type):algorithm(type){}
 		
 		double value(double);

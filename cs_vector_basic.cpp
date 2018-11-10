@@ -18,7 +18,7 @@ cs_vector cs_vector::operator*(double const&k){
 	return cs_vector(k*x,k*y,k*z);
 }
 cs_vector operator*(double k,cs_vector const&v){
-	return cs_vector(k*v.x,k*v.y,k*v.z);
+	return cs_vector(k*v.getX(),k*v.getY(),k*v.getZ());
 }
 cs_vector cs_vector::operator%(cs_vector const&v){
 	return cs_vector(y*v.z-z*v.y,z*v.x-x*v.z,x*v.y-y*v.x);
@@ -32,4 +32,14 @@ bool cs_vector::unit(){
 }
 bool cs_vector::operator==(cs_vector const&v){
 	return (x==v.x&&y==v.y&&z==v.z);
+}
+
+double cs_vector::getX()const{
+	return x;
+}
+double cs_vector::getY()const{
+	return y;
+}
+double cs_vector::getZ()const{
+	return z;
 }
