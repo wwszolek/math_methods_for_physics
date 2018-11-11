@@ -10,7 +10,9 @@ class cs_vector_vd{
 		function<algorithm_type> x,y,z;
 	public:
 		cs_vector_vd(){}
-		cs_vector_vd(function<algorithm_type> funcx,function<algorithm_type> funcy,function<algorithm_type> funcz):x(funcx),y(funcy),z(funcz){}
+		cs_vector_vd(function<algorithm_type> funcx,function<algorithm_type> funcy=0,function<algorithm_type> funcz=0):x(funcx),y(funcy),z(funcz){}
+		
+		
 		cs_vector value(double);
 	
 };
