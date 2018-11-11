@@ -1,6 +1,6 @@
 #ifndef RELATION_H
 #define RELATION_H
-#include <vector>
+#include<vector>
 
 bool binary_search(std::vector<double>&, double,int&);
 inline double linear_approximation(double,double,double,double,double);
