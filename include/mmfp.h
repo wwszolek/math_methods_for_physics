@@ -3,4 +3,6 @@
 #include "cs_vector_basic.h"
 #include "cs_vector_transformation.h"
 #include "cs_vector_vd.h"
+#include "function.h"
+#include "relation.h"
 #endif
