@@ -17,6 +17,11 @@ class matrix_2d{
 		matrix_2d operator-(matrix_2d &);
 		matrix_2d operator*(double);
 		matrix_2d operator%(matrix_2d &);
+		bool isSquare();
+		matrix_2d sub(int,int);
+		matrix_2d adj();
+		double det();
+		matrix_2d inverse();
 		
 		inline int getRows();
 		inline int getCols();
